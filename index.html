@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tris (Tic-Tac-Toe) web game con tre livelli di difficoltà: Facile, Medio e Difficile.">
+  <title>Tris (Tic-Tac-Toe)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-container">
+    <header class="game-header">
+      <h1>Tris</h1>
+      <div class="difficulty-control">
+        <label for="select-difficulty">Difficoltà:</label>
+        <select id="select-difficulty" name="difficulty">
+          <option value="easy">Facile</option>
+          <option value="medium" selected>Medio</option>
+          <option value="hard">Difficile</option>
+        </select>
+      </div>
+    </header>
+
+    <section class="game-status-section">
+      <div id="status-message" class="status-message status--in-progress" aria-live="polite" role="status">
+        Tuo turno (X)
+      </div>
+    </section>
+
+    <section class="game-board-section">
+      <div class="grid-board" role="grid" aria-label="Griglia di gioco Tris">
+        <button type="button" class="cell" data-index="0" role="gridcell" aria-label="Casella 1, vuota"></button>
+        <button type="button" class="cell" data-index="1" role="gridcell" aria-label="Casella 2, vuota"></button>
+        <button type="button" class="cell" data-index="2" role="gridcell" aria-label="Casella 3, vuota"></button>
+        <button type="button" class="cell" data-index="3" role="gridcell" aria-label="Casella 4, vuota"></button>
+        <button type="button" class="cell" data-index="4" role="gridcell" aria-label="Casella 5, vuota"></button>
+        <button type="button" class="cell" data-index="5" role="gridcell" aria-label="Casella 6, vuota"></button>
+        <button type="button" class="cell" data-index="6" role="gridcell" aria-label="Casella 7, vuota"></button>
+        <button type="button" class="cell" data-index="7" role="gridcell" aria-label="Casella 8, vuota"></button>
+        <button type="button" class="cell" data-index="8" role="gridcell" aria-label="Casella 9, vuota"></button>
+      </div>
+    </section>
+
+    <footer class="game-actions">
+      <button type="button" id="btn-reset" class="btn-primary">Nuova Partita</button>
+    </footer>
+  </main>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

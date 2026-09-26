@@ -1,0 +1,7 @@
+{
+  "profile": "web-game",
+  "entry_point": "index.html",
+  "dist_dir": "dist",
+  "test_command": "npm test",
+  "build_command": "npm run build"
+}

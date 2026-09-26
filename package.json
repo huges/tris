@@ -1,0 +1,13 @@
+{
+  "name": "tris",
+  "version": "1.0.0",
+  "description": "Tris (Tic-Tac-Toe) web game with 3 difficulty levels",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "build": "node build.js"
+  },
+  "keywords": ["tic-tac-toe", "tris", "game"],
+  "author": "",
+  "license": "MIT"
+}
