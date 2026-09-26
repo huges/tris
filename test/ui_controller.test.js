@@ -17,7 +17,7 @@ function createMockElement(tagName = 'div', attributes = {}) {
     checked: Boolean(attrs.checked),
     classList: {
       add: (cls) => classList.add(cls),
-      remove: (cls) => classList.remove(cls),
+      remove: (cls) => classList.delete(cls),
       contains: (cls) => classList.has(cls),
     },
     setAttribute: (name, val) => {
