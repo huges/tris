@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "profile": "web-game",
+  "entrypoint": "index.html",
+  "source_files": [
+    "index.html",
+    "style.css",
+    "src/engine.js",
+    "src/ai.js",
+    "src/ui_controller.js",
+    "src/app.js"
+  ],
+  "test_files": [
+    "test/engine.test.js",
+    "test/ai.test.js",
+    "test/ui_controller.test.js"
+  ],
+  "asset_files": []
+}
